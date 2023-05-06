@@ -1,0 +1,165 @@
+body { background-color: #f9f8ea;
+}
+
+div { font-family: sans-serif;
+}
+
+th {font-family: sans-serif;}
+
+td {font-family: sans-serif;}
+
+.total {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.wrapper {
+width: 30%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 3px;
+  row-gap: 3px;
+  aspect-ratio: 1;
+}
+
+#totals {
+    width: 30%;
+}
+
+
+#keyContainer {
+    width: 30%;
+    
+}
+
+.ward {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.ward:hover {
+    opacity: 90%;
+}
+
+#Pullenvale::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-bottom: 6px solid #666;
+}
+
+#Jamboree::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-right: 8px solid #666;
+  border-top: 6px solid #666;
+}
+
+#WalterTaylor::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-left: 8px solid #666;
+  border-right: 8px solid #666;
+  border-bottom: 6px solid #666;
+}
+    
+#Tennyson::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-top: 6px solid #666;
+}
+
+#TheGabba::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-left: 8px solid #666;
+  border-top: 6px solid #666;
+}
+
+#Central::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-right: 8px solid #666;
+  border-bottom: 6px solid #666;
+}
+
+#Morningside::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-left: 8px solid #666;
+  border-top: 6px solid #666;
+}
+
+#Hamilton::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-bottom: 6px solid #666;
+  border-right: 8px solid #666;
+}
+
+#WynnumManly::before {
+  content: '';
+  position: relative;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-left: 8px solid #666;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+  .wrapper {
+    width: 100%;
+  }
+  
+  #totals {
+      width: 100%;
+  }
+  
+  #keyContainer {
+      width: 100% !important;
+  }
+
+}
+
+.footer{
+    color: #666; font-family: sans-serif; margin-top: 0px; font-size: smaller}
+}
