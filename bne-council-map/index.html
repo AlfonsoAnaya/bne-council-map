@@ -26,7 +26,7 @@
 <h1>An interactive map for the Brisbane Council Election 2024</h1>
 
 <div class="wrapper" id="councils">
-  <div class="ward" id="McDowall" onclick="cycleWinner(this.id)" =""="" style="background-color: rgb(39, 77, 152);">MD</div>
+  <div class="ward" id="McDowall" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">MD</div>
   <!-- added a div after each ward, even the empty ones, which will function as the gaps between wards, and between rows-->
   <div class="gap"></div>
   <div class="ward" id="BrackenRidge" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">BR</div>
@@ -37,47 +37,54 @@
   <div class="gap"></div>
   <!--added empty wards class for divs which occupy a square inthe grid but are empty :3 this will help with the final grid-->
   <div class="empty-ward"></div>
-  <div class="gap"></div>
+  <div class="gap gap1"></div>
   <div class="ward" id="TheGap" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">GP</div>
   <div class="gap"></div>
   <div class="ward" id="Enoggera" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">EN</div>
   <div class="gap"></div>
   <div class="ward" id="Marchant" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">MC</div>
   <div class="gap"></div>
-  <div class="ward" id="Hamilton" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);"><div style="position: absolute;">HM</div></div>
-  <div class="gap"></div>
-  <div class="ward" id="WynnumManly" onclick="cycleWinner(this.id)" style="background-color: rgb(212, 69, 71);"><div style="position: absolute;">WM</div></div>
-  <div class="gap"></div>
-  <div class="ward" id="Pullenvale" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);"><div style="position: absolute;">PV</div></div>
+  <div class="ward" id="Hamilton" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">HM</div>
+  <div class="gap river river1"></div>
+  <div class="ward" id="WynnumManly" onclick="cycleWinner(this.id)" style="background-color: rgb(212, 69, 71);">WM</div>
+  <div class="gap gap2a"></div>
+  <div class="gap gap2 river river2"></div>
+  <div class="gap gap2b"></div>
+  <div class="ward" id="Pullenvale" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">PV</div>
   <div class="gap"></div>
   <div class="ward" id="Paddington" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">PD</div>
   <div class="gap"></div>
-  <div class="ward" id="Central" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);"><div style="position: absolute;">CE</div></div>
-  <div class="gap"></div>
-  <div class="ward" id="Morningside" onclick="cycleWinner(this.id)" style="background-color: rgb(212, 69, 71);"><div style="position: absolute;">MS</div></div>
+  <div class="ward" id="Central" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">CE</div>
+  <div class="gap river"></div>
+  <div class="ward" id="Morningside" onclick="cycleWinner(this.id)" style="background-color: rgb(212, 69, 71);">MS</div>
   <div class="gap"></div>
   <div class="ward" id="Doboy" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">DB</div>
-  <div class="gap"></div>
-  <div class="ward" id="Jamboree" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);"><div style="position: absolute;">JB</div></div>
-  <div class="gap"></div>
-  <div class="ward" id="WalterTaylor" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);"><div style="position: absolute;">WT</div></div>
-  <div class="gap"></div>
-  <div class="ward" id="TheGabba" onclick="cycleWinner(this.id)" style="background-color: rgb(61, 138, 68);"><div style="position: absolute;">GB</div></div>
+  <div class="gap gap3 river river3a"></div>
+  <div class="gap gap3a"></div>
+  <div class="gap gap3 river river3b"></div>
+  <div class="gap gap3b"></div>
+  <div class="ward" id="Jamboree" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">JB</div>
+  <div class="gap river"></div>
+  <div class="ward" id="WalterTaylor" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">WT</div>
+  <div class="gap river"></div>
+  <div class="ward" id="TheGabba" onclick="cycleWinner(this.id)" style="background-color: rgb(61, 138, 68);">GB</div>
   <div class="gap"></div>
   <div class="ward" id="Coorparoo" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">CP</div>
   <div class="gap"></div>
   <div class="ward" id="Chandler" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">CH</div> 
-  <div class="gap"></div>
+  <div class="gap gap4a"></div>
+  <div class="gap gap4 river river4"></div>
+  <div class="gap gap4b"></div>
   <div class="empty-ward"></div>
   <div class="gap"></div>
-  <div class="ward" id="Tennyson" onclick="cycleWinner(this.id)" style="background-color: rgb(230, 195, 75);"><div style="position: absolute;">TS</div></div>
+  <div class="ward" id="Tennyson" onclick="cycleWinner(this.id)" style="background-color: rgb(230, 195, 75);">TS</div>
   <div class="gap"></div>
   <div class="ward" id="Moorooka" onclick="cycleWinner(this.id)" style="background-color: rgb(212, 69, 71);">MO</div>
   <div class="gap"></div>
   <div class="ward" id="HollandPark" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">HP</div>
   <div class="gap"></div>
   <div class="ward" id="MacGregor" onclick="cycleWinner(this.id)" style="background-color: rgb(39, 77, 152);">MG</div>
-  <div class="gap"></div>
+  <div class="gap gap5"></div>
   <div class="empty-ward"></div>
   <div class="gap"></div>
   <div class="ward" id="ForestLake" onclick="cycleWinner(this.id)" style="background-color: rgb(212, 69, 71);">FL</div>
