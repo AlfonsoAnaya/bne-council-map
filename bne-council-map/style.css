@@ -5,6 +5,7 @@ body {
 }
 
 h1 {
+  margin: .5em 0;
   text-align: center;
 }
 
@@ -53,12 +54,12 @@ h1 {
 
 .wrapper {
   margin: 0 auto;
+  margin-bottom: 2em;
   width: 70%;
   display: grid;
   justify-content: center;
-  grid-template-columns: 18% 2.5% 18% 2.5% 18% 2.5% 18% 2.5% 18%;
+  grid-template-columns: 100px 10px 100px 10px 100px 10px 100px 10px 100px;
   grid-template-rows: 100px 10px 100px 10px 100px 10px 100px 10px 100px 10px 100px;
-  aspect-ratio: 1;
   grid-template-areas: 
   "row1    row1    row1   row1    row1    row1    row1   row1   row1"
   "gap1    gap1    gap1   gap1    gap1    gap1    gap1   gap1   gap1"
@@ -79,7 +80,7 @@ h1 {
   background-color: #f9f8ea;
 }
 .river {
-  background-color: #64646e;
+  background-color: #82cde2;
 }
 .river1 {
   border-radius: .25em .25em 0 0;
@@ -96,13 +97,22 @@ h1 {
 
 
 #totals {
-  width: 70%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 
 #keyContainer {
-  width: 70%;
+  width: 50%;
+  margin: 0 auto;
+}
 
+.party {
+  text-align: left;
+}
+
+.wards-table-title {
+  text-align: right;
 }
 
 .ward {
@@ -112,6 +122,7 @@ h1 {
   justify-content: center;
   align-items: center;
   color: white;
+  font-weight: bold;
   border-radius: .25em;
 }
 
@@ -219,28 +230,86 @@ h1 {
 
 */
 
-
 @media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 1.6em
+  }
 
   .wrapper {
     width: 95%;
   }
 
   #totals {
-    margin: 0 auto;
+    width: 60%;
+  }
+
+  #keyContainer {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  h1 {
+    font-size: 1.3em
+  }
+
+  .wrapper {
+    width: 95%;
+    grid-template-columns: 70px 7.5px 70px 7.5px 70px 7.5px 70px 7.5px 70px;
+    grid-template-rows: 70px 7.5px 70px 7.5px 70px 7.5px 70px 7.5px 70px 7.5px 70px;
+  }
+
+  #totals {
     width: 95%;
   }
 
   #keyContainer {
-    margin: 0 auto;
     width: 95% !important;
   }
 
 }
 
-.footer {
+footer {
   color: #666;
-  font-family: sans-serif;
-  margin-top: 0px;
-  font-size: smaller
+  font-size: .9em;
+  text-align: center;
+  height: 3em;
+  background-color: #d6e4edbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+footer a {
+  text-decoration: underline dotted;
+  cursor: pointer;
+  color: #666;
+}
+
+footer a:hover {
+  text-decoration: underline solid;
+  cursor: pointer;
+  color: rgb(6, 87, 162);
+}
+
+@media only screen and (max-width: 330px) {
+  h1 {
+    font-size: 1.3em
+  }
+
+  .wrapper {
+    width: 95%;
+    grid-template-columns: 58px 6px 58px 6px 58px 6px 58px 6px 58px;
+    grid-template-rows: 58px 6px 58px 6px 58px 6px 58px 6px 58px 6px 58px;
+  }
+
+  #totals {
+    width: 95%;
+  }
+
+  #keyContainer {
+    width: 95% !important;
+  }
+
+}
+
